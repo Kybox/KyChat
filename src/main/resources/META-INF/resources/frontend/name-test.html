@@ -1,0 +1,29 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/vaadin-ordered-layout/src/vaadin-horizontal-layout.html">
+
+<dom-module id="name-test">
+    <template>
+<style include="shared-styles">
+            :host {
+                display: block;
+            }
+        </style>
+<vaadin-horizontal-layout style="width: 100%; height: 100%;"></vaadin-horizontal-layout>
+<vaadin-horizontal-layout style="width: 100%; height: 100%;"></vaadin-horizontal-layout>
+</template>
+
+    <script>
+        class NameTest extends Polymer.Element {
+            static get is() {
+                return 'name-test';
+            }
+
+            static get properties() {
+                return {
+                    // Declare your properties here.
+                };
+            }
+        }
+        customElements.define(NameTest.is, NameTest);
+    </script>
+</dom-module>
